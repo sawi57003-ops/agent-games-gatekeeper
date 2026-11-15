@@ -24,7 +24,7 @@ POST /agent
         ├─ deterministic policy (src/decision.js) → decision + reason_code
         ├─ snarkjs fullProve with gatekeeper.wasm / gatekeeper_final.zkey
         │    (skipped only for PROOF_REUSED — documented as having no proof)
-        ├─ Kurier submit + bounded poll (≤15 s) → on-chain txHash as proof_tx
+        ├─ Kurier submit + bounded poll (≤10 s, per-request timeouts) → on-chain txHash as proof_tx
         └─ signed JSON response
 ```
 

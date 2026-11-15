@@ -32,8 +32,8 @@ function loadConfig(env = process.env) {
       "0x6b79c6012a6d8651f3e13bc4d2a20370280ab49700c90c5316d4168bfbad77b0",
     circuitsDir: env.CIRCUITS_DIR ?? defaultCircuitsDir(),
     seenStorePath: env.SEEN_STORE_PATH ?? defaultSeenStorePath(),
-    kurierPollBudgetMs: Number(env.KURIER_POLL_BUDGET_MS ?? 15000),
-    kurierPollIntervalMs: Number(env.KURIER_POLL_INTERVAL_MS ?? 3000),
+    kurierPollBudgetMs: Number(env.KURIER_POLL_BUDGET_MS ?? 10000),
+    kurierPollIntervalMs: Number(env.KURIER_POLL_INTERVAL_MS ?? 2000),
     taskSoftDeadlineMs: Number(env.TASK_SOFT_DEADLINE_MS ?? 50000),
     port: Number(env.PORT ?? 8787),
   };
