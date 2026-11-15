@@ -1,0 +1,25 @@
+{
+  "name": "agent-games-gatekeeper",
+  "version": "1.0.0",
+  "description": "Proof Gatekeeper agent endpoint for zkVerify Agent Games",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/harness.js",
+    "start": "node src/local-server.js",
+    "dev": "node src/local-server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "snarkjs": "^0.7.6"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": "true"
+}
